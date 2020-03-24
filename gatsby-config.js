@@ -53,12 +53,6 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-typography",
-      options: {
-        pathToConfigModule: `${__dirname}/src/utils/typography.js`,
-      },
-    },
-    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "posts",
@@ -73,6 +67,8 @@ module.exports = {
             resolve: "gatsby-remark-images",
             options: {
               maxWidth: 850,
+              withWebp: true,
+              wrapperStyle: "margin: 0;",
             },
           },
           "gatsby-remark-prismjs",
