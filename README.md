@@ -1,28 +1,12 @@
-# ihwan.id [![Netlify Status](https://api.netlify.com/api/v1/badges/5d79476b-012c-49b9-a2d9-f20c56855bd6/deploy-status)](https://app.netlify.com/sites/ihwan/deploys) [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+# ddarkBlog
 
-Personal website running on Gatsby, React, and NodeJs.
+개인 블로그.
 
-### Installing
+## Commands
 
-Run local server:
+- `yarn dev` => 개발 서버 시작
+- `yarn lint` => ESLint
 
-```bash
-git clone https://github.com/ihwanid/ihwan.id
-cd ihwan.id
-yarn
-yarn run dev
-```
+## Thanks to
 
-Navigate to `localhost:8000`.
-
-## Authors
-
-* **Ihwan Dede** - *Associate Android Developer* - [IhwanID](https://ihwan.id)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-- Tania Rascia - [taniarascia.com](https://github.com/taniarascia/taniarascia.com/)
+❤️ Original source from [taniarascia](https://github.com/taniarascia/taniarascia.com)
