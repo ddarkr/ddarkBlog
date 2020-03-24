@@ -40,7 +40,7 @@ module.exports = {
           },
           {
             family: `Poppins`,
-            variants: [`300`, `700`],
+            variants: [`400`, `700`],
           },
         ],
       },
