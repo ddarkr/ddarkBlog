@@ -1,8 +1,8 @@
 ---
-date: 2020-03-25
-title: "Windows 10, Yarn 에서 global 명령어 문제"
+date: 2019-12-18
+title: "Windows 10, yarn에서 global 명령어 문제"
 template: post
-thumbnail: "../thumbnails/gatsby.png"
+thumbnail: "../thumbnails/yarn.png"
 slug: windows-10-yarn-global-commands-problem
 categories:
   - 문제 해결
@@ -20,3 +20,20 @@ tags:
 ![](../images/2020-03-25-03-58-04.png)
 
 🔼 `yarn global bin` 명령어로 Yarn 의 bin 폴더를 확인하고, 복사해준다.
+
+![](../images/2020-03-25-04-08-02.png)
+
+🔼 시스템 속성에서 환경 변수를 눌러 환경 변수를 관리하는 창에 들어가주도록 하자. (Windows 10 검색 창에, 고급 시스템 설정 보기을 검색하면 나온다.
+
+![](../images/2020-03-25-04-08-19.png)
+
+🔼 시스템 변수에 있는 Path 를 찾아서, 편집을 눌러준다.
+
+![](../images/2020-03-25-04-08-27.png)
+
+🔼 새로 만들기를 통하여, Yarn 의 bin 폴더를 등록해주면 된다.
+
+## 기타
+
+Github Issue 를 통해 해결법을 얻을 수 있었다.
+https://github.com/yarnpkg/yarn/issues/3431#issuecomment-303399450
