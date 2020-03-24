@@ -16,7 +16,9 @@ export default class CategoryTemplate extends Component {
           title={`"${category}" 카테고리에 있는 글 – ${config.siteTitle}`}
         />
         <div className="container">
-          <h1>{category}</h1>
+          <h1>
+            <u>{category}</u> 카테고리에 있는 글
+          </h1>
           <PostListing postEdges={postEdges} />
         </div>
       </Layout>
