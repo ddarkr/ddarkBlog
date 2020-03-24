@@ -27,7 +27,7 @@ export default class Index extends Component {
               </span>{" "}
               Welcome
             </h1>
-            <p>풀스택 지망 개발자, 정도현의 개발 블로그에요.</p>
+            <p>풀스택 지망 개발자의 작은 개발 블로그</p>
             <div className="social-buttons">
               <div>
                 <GitHubButton
