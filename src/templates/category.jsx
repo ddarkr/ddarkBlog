@@ -13,7 +13,7 @@ export default class CategoryTemplate extends Component {
     return (
       <Layout>
         <Helmet
-          title={`Posts in category "${category}" – ${config.siteTitle}`}
+          title={`"${category}" 카테고리에 있는 글 – ${config.siteTitle}`}
         />
         <div className="container">
           <h1>{category}</h1>
