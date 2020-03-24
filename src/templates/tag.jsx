@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import Helmet from 'react-helmet'
-import { graphql } from 'gatsby'
-import Layout from '../layout'
-import PostListing from '../components/PostListing'
-import config from '../../data/SiteConfig'
+import React, { Component } from "react"
+import Helmet from "react-helmet"
+import { graphql } from "gatsby"
+import Layout from "../layout"
+import PostListing from "../components/PostListing"
+import config from "../../data/SiteConfig"
 
 export default class TagTemplate extends Component {
   render() {
@@ -12,10 +12,10 @@ export default class TagTemplate extends Component {
 
     return (
       <Layout>
-        <Helmet title={`Posts tagged as "${tag}" – ${config.siteTitle}`} />
+        <Helmet title={`"${tag}" 태그가 달린 글 – ${config.siteTitle}`} />
         <div className="container">
           <h1>
-            Posts tagged as <u>{tag}</u>
+            <u>{tag}</u> 태그가 달린 글
           </h1>
           <PostListing postEdges={postEdges} />
         </div>
