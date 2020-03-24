@@ -12,7 +12,7 @@ export default class Index extends Component {
     const popularPostEdges = this.props.data.latest.edges
     return (
       <Layout>
-        <Helmet title={`${config.siteTitle} – Associate Android Developer`} />
+        <Helmet title={`${config.siteTitle} (도다 블로그)`} />
         <SEO />
         <div className="container">
           <div className="lead">
@@ -22,7 +22,7 @@ export default class Index extends Component {
                 fontWeight: 600,
               }}
             >
-              <span role="img" aria-label="Developer">
+              <span role="img" aria-label="Developer emoji">
                 👨‍💻
               </span>{" "}
               Welcome
@@ -36,7 +36,7 @@ export default class Index extends Component {
                   data-show-count="false"
                   aria-label="Follow @ddarkr on GitHub"
                 >
-                  Follow
+                  Github
                 </GitHubButton>
               </div>
             </div>
