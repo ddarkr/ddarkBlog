@@ -106,8 +106,8 @@ module.exports = {
             type: "image/png",
           },
           {
-            src: "/logos/logo-1024.png",
-            sizes: "1024x1024",
+            src: "/logos/logo-1000.png",
+            sizes: "1000x1000",
             type: "image/png",
           },
         ],
