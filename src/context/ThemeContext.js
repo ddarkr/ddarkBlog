@@ -31,9 +31,18 @@ class ThemeProvider extends Component {
 
   componentDidMount() {
     const lsDark = JSON.parse(localStorage.getItem("ddark"))
-
     if (lsDark) {
+      // localStorage 값이 있으면 다크 모드 ON
       this.setState({ dark: lsDark })
+    } else {
+      // localStorage 값이 없으면 브라우저 설정 감지
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        this.setState({ dark: true })
+        localStorage.setItem("ddark", true)
+      }
     }
   }
 
