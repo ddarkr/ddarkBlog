@@ -368,7 +368,7 @@ $dark-border: darken($background, 3%);
   }
 
   ::selection {
-    background: lighten($primary-color, 10%);
+    background: rgba(36, 146, 113, 0.8);
     color: white;
   }
 }
