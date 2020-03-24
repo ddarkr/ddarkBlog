@@ -3,6 +3,8 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: "16px",
   headerFontFamily: [
+    "Poppins",
+    "Noto Sans KR",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
@@ -10,6 +12,8 @@ const typography = new Typography({
     "sans-serif",
   ],
   bodyFontFamily: [
+    "Poppins",
+    "Noto Sans KR",
     "Helvetica Neue",
     "Segoe UI",
     "Helvetica",
