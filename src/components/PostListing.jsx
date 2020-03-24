@@ -36,7 +36,6 @@ export default class PostListing extends Component {
             thumbnail = post.thumbnail.childImageSharp.fixed
           }
 
-          const popular = post.categories.includes("Popular")
           const date = formatDate(post.date)
           const newest = moment(post.date) > moment().subtract(1, "months")
 
@@ -50,12 +49,7 @@ export default class PostListing extends Component {
                 </div>
                 {newest && (
                   <div className="new">
-                    <div>New!</div>
-                  </div>
-                )}
-                {popular && !simple && (
-                  <div className="popular">
-                    <div>Popular</div>
+                    <div>New</div>
                   </div>
                 )}
               </div>
