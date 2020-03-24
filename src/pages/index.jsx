@@ -19,14 +19,15 @@ export default class Index extends Component {
             <h1
               style={{
                 marginBottom: "1rem",
+                fontWeight: 600,
               }}
             >
               <span role="img" aria-label="Developer">
                 👨‍💻
               </span>{" "}
-              welcome
+              Welcome
             </h1>
-            <p>풀스택 지망 개발자, 정도현의 개발 블로그입니다.</p>
+            <p>풀스택 지망 개발자, 정도현의 개발 블로그에요.</p>
             <div className="social-buttons">
               <div>
                 <GitHubButton
