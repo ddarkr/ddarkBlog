@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby'
-import Img from 'gatsby-image'
-import { formatDate } from '../utils/global'
-import moment from 'moment'
+import React, { Component } from "react"
+import { Link } from "gatsby"
+import Img from "gatsby-image"
+import moment from "moment"
+import { formatDate } from "../utils/global"
 
 export default class PostListing extends Component {
   getPostList() {
     const { postEdges } = this.props
     const postList = postEdges
-      .filter(postEdge => postEdge.node.frontmatter.template === 'post')
+      .filter(postEdge => postEdge.node.frontmatter.template === "post")
       .map(postEdge => {
         return {
           path: postEdge.node.fields.slug,
@@ -29,16 +29,16 @@ export default class PostListing extends Component {
     const postList = this.getPostList()
 
     return (
-      <section className={`posts ${simple ? 'simple' : ''}`}>
+      <section className={`posts ${simple ? "simple" : ""}`}>
         {postList.map(post => {
           let thumbnail
           if (post.thumbnail) {
             thumbnail = post.thumbnail.childImageSharp.fixed
           }
 
-          const popular = post.categories.includes('Popular')
+          const popular = post.categories.includes("Popular")
           const date = formatDate(post.date)
-          const newest = moment(post.date) > moment().subtract(1, 'months')
+          const newest = moment(post.date) > moment().subtract(1, "months")
 
           return (
             <Link to={post.path} key={post.title}>

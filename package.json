@@ -1,11 +1,8 @@
 {
-  "name": "ihwan.id",
+  "name": "ddarkblog",
   "private": true,
-  "author": " Ihwan <mynameisihwan@gmail.com>",
-  "title": "ihwan.id",
-  "description": "Ihwan ID Personal Website",
-  "homepage": "https://codewith.ihwan.id",
-  "repository": "git@github.com:IhwanID/ihwan.id.git",
+  "title": "ddarkblog",
+  "description": "ddarkBlog with Gatsby",
   "version": "0.1.0",
   "license": "MIT",
   "main": "n/a",
@@ -76,13 +73,6 @@
     "stylelint-config-standard": "^19.0.0",
     "write-good": "^1.0.2"
   },
-  "keywords": [
-    "ihwan id",
-    "ihwan",
-    "ihwan dede",
-    "codewithihwan",
-    "code with ihwan"
-  ],
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
