@@ -7,6 +7,7 @@ import PostTags from "../components/PostTags"
 import SEO from "../components/SEO"
 import config from "../../data/SiteConfig"
 import { formatDate, editOnGithub } from "../utils/global"
+import Utterances from "../components/Utterances"
 
 export default class PostTemplate extends Component {
   render() {
@@ -54,6 +55,7 @@ export default class PostTemplate extends Component {
             className="post"
             dangerouslySetInnerHTML={{ __html: postNode.html }}
           />
+          <Utterances />
         </article>
       </Layout>
     )
