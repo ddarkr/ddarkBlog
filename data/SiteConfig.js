@@ -10,7 +10,7 @@ const config = {
   dateFormat: "YYYY.MM.DD.",
   siteDescription: "도다의 개인 기술 블로그.",
   siteRss: "/rss.xml",
-  googleAnalyticsID: "UA-125079658-2",
+  googleAnalyticsID: "UA-135920907-3",
   disqusShortname: "ddarkblog",
   postDefaultCategoryID: "",
   userName: "ddark",
