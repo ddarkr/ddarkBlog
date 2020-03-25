@@ -1,4 +1,5 @@
 {
+  "name": "ddarkblog",
   "routes": [
     {
       "src": "/entry/([^/]+)",
