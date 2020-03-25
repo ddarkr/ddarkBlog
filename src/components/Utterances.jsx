@@ -13,7 +13,7 @@ const Utterances = React.memo(() => {
       src,
       repo,
       "issue-term": "pathname",
-      label: "comment",
+      label: "💬 comment",
       theme: "github-light",
       crossOrigin: "anonymous",
       async: "true",
