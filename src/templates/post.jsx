@@ -8,6 +8,31 @@ import SEO from "../components/SEO"
 import config from "../../data/SiteConfig"
 import { formatDate, editOnGithub } from "../utils/global"
 import Utterances from "../components/Utterances"
+import styled from "@emotion/styled"
+
+const ToC = styled.div`
+  max-width: 400px;
+  border-left: 4px solid #ececec;
+  padding-left: 20px;
+  margin-bottom: 70px;
+  a {
+    font-size: 14px;
+    color: #4c4c4c;
+    font-weight: 400;
+  }
+  ul {
+    li {
+      margin: 0;
+      padding: 0;
+      li {
+        padding-left: 15px;
+      }
+      &::before {
+        content: none;
+      }
+    }
+  }
+`
 
 export default class PostTemplate extends Component {
   render() {
@@ -51,6 +76,11 @@ export default class PostTemplate extends Component {
               <PostTags tags={post.tags} />
             </div>
           </header>
+          <ToC>
+            <div
+              dangerouslySetInnerHTML={{ __html: postNode.tableOfContents }}
+            />
+          </ToC>
           <div
             className="post"
             dangerouslySetInnerHTML={{ __html: postNode.html }}
@@ -67,6 +97,7 @@ export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      tableOfContents(pathToSlugField: "frontmatter.slug", maxDepth: 6)
       timeToRead
       excerpt
       frontmatter {
