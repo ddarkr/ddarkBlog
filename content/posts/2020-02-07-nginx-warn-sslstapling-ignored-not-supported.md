@@ -2,7 +2,7 @@
 date: 2020-02-07
 title: 'nginx: [warn] "ssl_stapling" ignored, not supported'
 template: post
-thumbnail: "../thumbnails/terminal.png"
+thumbnail: "../thumbnails/nginx.png"
 slug: nginx-warn-sslstapling-ignored-not-supported
 categories:
   - 문제 해결
