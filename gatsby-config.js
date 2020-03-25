@@ -19,6 +19,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
+    "gatsby-plugin-remove-generator",
     "gatsby-plugin-twitter",
     {
       resolve: `gatsby-plugin-netlify`,
@@ -102,8 +103,8 @@ module.exports = {
             type: "image/png",
           },
           {
-            src: "/logos/logo-1000.png",
-            sizes: "1000x1000",
+            src: "/logos/logo-1024.png",
+            sizes: "1024x1024",
             type: "image/png",
           },
         ],
