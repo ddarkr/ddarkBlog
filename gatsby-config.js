@@ -21,7 +21,12 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-remove-generator",
     "gatsby-plugin-preact",
-    "gatsby-plugin-twitter",
+    {
+      resolve: "gatsby-plugin-html-attributes",
+      options: {
+        lang: "ko",
+      },
+    },
     {
       resolve: `gatsby-plugin-netlify`,
       options: {
