@@ -1,10 +1,13 @@
-import React, { createRef, useLayoutEffect } from "react"
+import React, { createRef, useLayoutEffect, useContext } from "react"
+
+import ThemeContext from "../context/ThemeContext"
 
 const src = "https://utteranc.es/client.js"
 const repo = "ddarkr/ddarkBlog"
 
 const Utterances = React.memo(() => {
   const containerRef = createRef()
+  const theme = useContext(ThemeContext)
 
   useLayoutEffect(() => {
     const utterances = document.createElement("script")
@@ -14,7 +17,7 @@ const Utterances = React.memo(() => {
       repo,
       "issue-term": "pathname",
       label: "💬 comment",
-      theme: "github-light",
+      theme: theme.dark ? "github-dark" : "github-light",
       crossOrigin: "anonymous",
       async: "true",
     }
@@ -30,5 +33,6 @@ const Utterances = React.memo(() => {
 })
 
 Utterances.displayName = "Utterances"
+Utterances.contextType = ThemeContext
 
 export default Utterances
