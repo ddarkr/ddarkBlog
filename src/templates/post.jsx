@@ -19,6 +19,9 @@ const ToC = styled.div`
     font-size: 14px;
     color: #4c4c4c;
     font-weight: 400;
+    .dark & {
+      color: #bbb;
+    }
   }
   ul {
     li {
