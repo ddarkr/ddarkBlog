@@ -15,7 +15,7 @@ export default class BlogPage extends Component {
     filteredPosts: this.props.data.posts.edges,
   }
 
-  handleChange = async event => {
+  handleChange = async (event) => {
     const { name, value } = event.target
 
     await this.setState({ [name]: value })
@@ -26,7 +26,7 @@ export default class BlogPage extends Component {
   filterPosts = () => {
     const { posts, searchTerm, currentCategories } = this.state
 
-    let filteredPosts = posts.filter(post => {
+    let filteredPosts = posts.filter((post) => {
       if (
         post.node.frontmatter.title
           .toLowerCase()
@@ -37,10 +37,10 @@ export default class BlogPage extends Component {
     })
 
     if (currentCategories.length > 0) {
-      filteredPosts = filteredPosts.filter(post => {
+      filteredPosts = filteredPosts.filter((post) => {
         if (
           post.node.frontmatter.categories &&
-          currentCategories.every(cat =>
+          currentCategories.every((cat) =>
             post.node.frontmatter.categories.includes(cat)
           )
         ) {
@@ -52,17 +52,17 @@ export default class BlogPage extends Component {
     this.setState({ filteredPosts })
   }
 
-  updateCategories = category => {
+  updateCategories = (category) => {
     const { currentCategories } = this.state
 
     if (!currentCategories.includes(category)) {
-      this.setState(prevState => ({
+      this.setState((prevState) => ({
         currentCategories: [...prevState.currentCategories, category],
       }))
     } else {
-      this.setState(prevState => ({
+      this.setState((prevState) => ({
         currentCategories: prevState.currentCategories.filter(
-          cat => category !== cat
+          (cat) => category !== cat
         ),
       }))
     }
@@ -80,7 +80,7 @@ export default class BlogPage extends Component {
         <div className="container">
           <h1>Articles</h1>
           <div className="category-container">
-            {categories.map(category => {
+            {categories.map((category) => {
               const active = currentCategories.includes(category.fieldValue)
 
               return (
@@ -93,7 +93,9 @@ export default class BlogPage extends Component {
                   }}
                 >
                   {category.fieldValue}{" "}
-                  <strong className="count">{category.totalCount}</strong>
+                  <strong className="count">
+                    <span className="num">{category.totalCount}</span>
+                  </strong>
                 </div>
               )
             })}
