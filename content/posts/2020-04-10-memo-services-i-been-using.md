@@ -1,6 +1,6 @@
 ---
 date: 2020-04-10
-title: "내가 사용해 온 노트 서비스들"
+title: "내가 사용해 온 노트 (메모) 서비스들"
 template: post
 slug: memo-services-i-ve-been-using
 categories:
