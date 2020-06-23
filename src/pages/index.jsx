@@ -22,12 +22,12 @@ export default class Index extends Component {
                 fontWeight: 600,
               }}
             >
-              <span role="img" aria-label="Developer emoji">
-                👨‍💻
-              </span>{" "}
-              Welcome
+              안녕하세요{" "}
+              <span role="img" aria-label="Handwave">
+                👋
+              </span>
             </h1>
-            <p>풀스택 지망 개발자의 작은 개발 블로그</p>
+            <p>웹 개발자 지망생의 작은 블로그</p>
             <div className="social-buttons">
               <div>
                 <GitHubButton
