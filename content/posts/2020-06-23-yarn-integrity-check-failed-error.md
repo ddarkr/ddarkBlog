@@ -2,6 +2,7 @@
 date: 2020-06-23
 title: "yarn, Integrity check failed 오류"
 template: post
+thumbnail: "../thumbnails/yarn.png"
 slug: yarn-integrity-check-failed-error
 categories:
   - 문제 해결
