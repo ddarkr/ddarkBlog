@@ -22,7 +22,8 @@ export default class Index extends Component {
                 fontWeight: 600,
               }}
             >
-              안녕하세요{" "}
+              안녕하세요
+              {" "}
               <span role="img" aria-label="Handwave">
                 👋
               </span>

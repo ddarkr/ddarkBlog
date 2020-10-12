@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
 
 export default class SimpleListing extends Component {
   render() {
@@ -6,12 +6,17 @@ export default class SimpleListing extends Component {
 
     return (
       <section className="simple-posts">
-        {data.map(post => {
+        {data.map((post) => {
           return (
-            <a href={post.path} key={post.title} target="_blank">
+            <a
+              href={post.path}
+              key={post.title}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <div className="each">
                 <h2>
-                  <img src={post.img} />
+                  <img src={post.img} alt={post.title} />
                   {post.title}
                 </h2>
               </div>

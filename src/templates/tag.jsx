@@ -15,7 +15,9 @@ export default class TagTemplate extends Component {
         <Helmet title={`"${tag}" 태그가 달린 글 – ${config.siteTitle}`} />
         <div className="container">
           <h1>
-            <u>{tag}</u> 태그가 달린 글
+            <u>{tag}</u>
+            {' '}
+            태그가 달린 글
           </h1>
           <PostListing postEdges={postEdges} />
         </div>

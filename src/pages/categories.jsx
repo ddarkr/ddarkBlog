@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Helmet } from 'react-helmet'
-import Layout from '../layout'
 import { Link, graphql } from 'gatsby'
 import kebabCase from 'lodash.kebabcase'
+import Layout from '../layout'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 
@@ -20,7 +20,9 @@ export default class CategoriesPage extends Component {
             {group.map(category => (
               <Link to={`/categories/${kebabCase(category.fieldValue)}`} key={category.fieldValue}>
                 <span key={category.fieldValue}>
-                  {category.fieldValue} <strong className="count">{category.totalCount}</strong>
+                  {category.fieldValue} 
+                  {' '}
+                  <strong className="count">{category.totalCount}</strong>
                 </span>
               </Link>
             ))}

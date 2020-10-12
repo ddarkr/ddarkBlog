@@ -17,7 +17,9 @@ export default class CategoryTemplate extends Component {
         />
         <div className="container">
           <h1>
-            <u>{category}</u> 카테고리에 있는 글
+            <u>{category}</u>
+            {' '}
+            카테고리에 있는 글
           </h1>
           <PostListing postEdges={postEdges} />
         </div>

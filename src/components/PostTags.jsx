@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import kebabCase from 'lodash.kebabcase'
-import { Link } from 'gatsby'
+import React, { Component } from "react"
+import kebabCase from "lodash.kebabcase"
+import { Link } from "gatsby"
 
 export default class PostTags extends Component {
   render() {
@@ -9,9 +9,13 @@ export default class PostTags extends Component {
     return (
       <div className="tag-container">
         {tags &&
-          tags.map(tag => (
-            <Link key={tag} style={{ textDecoration: 'none' }} to={`/tags/${kebabCase(tag)}/`}>
-              <span className={size ? size : null}>{tag}</span>
+          tags.map((tag) => (
+            <Link
+              key={tag}
+              style={{ textDecoration: "none" }}
+              to={`/tags/${kebabCase(tag)}/`}
+            >
+              <span className={size || null}>{tag}</span>
             </Link>
           ))}
       </div>

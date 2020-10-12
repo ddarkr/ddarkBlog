@@ -2,13 +2,13 @@ import React, { Component } from "react"
 import Helmet from "react-helmet"
 import { graphql } from "gatsby"
 import Img from "gatsby-image"
+import styled from "@emotion/styled"
 import Layout from "../layout"
 import PostTags from "../components/PostTags"
 import SEO from "../components/SEO"
 import config from "../../data/SiteConfig"
 import { formatDate, editOnGithub } from "../utils/global"
 import Utterances from "../components/Utterances"
-import styled from "@emotion/styled"
 
 const ToC = styled.div`
   max-width: 400px;
