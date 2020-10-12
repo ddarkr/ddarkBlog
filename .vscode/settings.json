@@ -1,6 +1,6 @@
 {
-    "pasteImage.basePath": "${projectRoot}/content/images",
-    "pasteImage.path": "${projectRoot}/content/images",
-    "pasteImage.prefix": "../images/",
-    "pasteImage.namePrefix": "../images/"
+  "pasteImage.basePath": "${projectRoot}/content/images",
+  "pasteImage.path": "${projectRoot}/content/images",
+  "pasteImage.prefix": "../images/",
+  "pasteImage.namePrefix": "../images/"
 }
