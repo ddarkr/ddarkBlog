@@ -20,7 +20,7 @@
   .nav-container {
     padding: 0 1.5rem;
     height: 55px;
-    max-width: $width;
+    max-width: calc(#{$width} + 150px);
     margin: auto;
     display: flex;
     align-items: center;
