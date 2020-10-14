@@ -2,12 +2,15 @@
 date: 2020-04-10
 title: "내가 사용해 온 노트 (메모) 서비스들"
 template: post
+thumbnail: "../thumbnails/memo.png"
 slug: memo-services-i-ve-been-using
 categories:
   - 잡담
 tags:
   - write
 ---
+
+# 서론
 
 나는 중학생 시절부터 어딘가에 기록할 곳을 찾고, 특히 "클라우드"로 저장이 가능한 노트 어플리케이션을 찾아다녔다. 이 계열의 대명사 Evernote부터 시작해서, 결국 마지막에 Notion으로 오게 된 이유. 그것을 풀어나가볼까 한다.
 
