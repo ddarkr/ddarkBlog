@@ -1,10 +1,6 @@
 /* Code
   =============== */
 
-code {
-  font-size: 13px;
-}
-
 pre.language-terminal code.language-terminal {
   position: relative;
   padding: 1rem;
@@ -40,7 +36,6 @@ code[class*='language-'],
 pre[class*='language-'],
 pre code {
   font-family: $code-font-family;
-  font-size: 13px;
   color: $code-font-color;
   direction: ltr;
   text-align: left;
@@ -94,6 +89,7 @@ kbd {
   padding: 3px 5px;
   border: none;
   font-family: $code-font-family;
+  font-size: 80%;
   font-weight: 400;
   color: #111111;
   border-radius: 4px;
@@ -116,16 +112,6 @@ code[class*='language-sass'] {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   margin-bottom: -2.2rem;
-}
-
-@include small-breakpoint {
-  code,
-  pre.language-terminal code.language-terminal,
-  code[class*='language-'],
-  pre[class*='language-'],
-  pre code {
-    font-size: 14px;
-  }
 }
 
 /* Syntax Highlighting */
