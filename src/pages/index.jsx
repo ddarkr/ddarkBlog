@@ -34,7 +34,7 @@ export default class Index extends Component {
               깔끔한 코드와 주석을 좋아하고, 항상 부족하여 언제나 배워나가는 개발자입니다.
               <br />
               <br />
-              더 많은 내용은 깃헙에서 봐주세요.
+              더 많은 내용은 깃헙과 이력서에서 봐주세요.
             </p>
             <div className="social-buttons">
               <div>
@@ -45,6 +45,15 @@ export default class Index extends Component {
                   aria-label="Follow @ddarkr on GitHub"
                 >
                   Github
+                </GitHubButton>
+                {'  '}
+                <GitHubButton
+                  href="https://github.com/ddarkr/resume"
+                  data-size="large"
+                  data-show-count="false"
+                  aria-label="View ddarkr/resume on Github"
+                >
+                  RESUME
                 </GitHubButton>
               </div>
             </div>
