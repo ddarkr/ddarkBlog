@@ -28,7 +28,14 @@ export default class Index extends Component {
                 👋
               </span>
             </h1>
-            <p>웹 개발자 지망생의 작은 블로그</p>
+            <p>
+              이름은 정도현, 닉네임은 &quot;도다&quot;라고 합니다. 
+              <br />
+              깔끔한 코드와 주석을 좋아하고, 항상 부족하여 언제나 배워나가는 개발자입니다.
+              <br />
+              <br />
+              더 많은 내용은 깃헙에서 봐주세요.
+            </p>
             <div className="social-buttons">
               <div>
                 <GitHubButton
