@@ -18,7 +18,7 @@ tags:
 
 Vue.js 버전 2의 라이프사이클에서 중요한 부분이라고 생각되는 것은 Create, Mount, Update, Destroy이라 이런 부분들을 상세하게 적어보겠다.
 
-<!-- ![Vue.js 라이프사이클 다이어그램](../images/2020-10-17-19-39-43.png) -->
+![Vue.js 라이프사이클 다이어그램](../images/2020-10-17-19-39-43.png)
 
 > 이미지의 출처는 [Vue.js 문서](https://kr.vuejs.org/v2/guide/instance.html#%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EB%8B%A4%EC%9D%B4%EC%96%B4%EA%B7%B8%EB%9E%A8)이다.
 
@@ -97,5 +97,5 @@ Vue.js 버전 2의 라이프사이클에서 중요한 부분이라고 생각되�
 
 # reference
 
-- <https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks>
-- <https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4>
+- https://vuejs.org/v2/guide/instance.html#Instance-Lifecycle-Hooks>
+- https://medium.com/witinweb/vue-js-%EB%9D%BC%EC%9D%B4%ED%94%84%EC%82%AC%EC%9D%B4%ED%81%B4-%EC%9D%B4%ED%95%B4%ED%95%98%EA%B8%B0-7780cdd97dd4
